@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google"; // Import Montserrat
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+// Configure the primary font for the body content
 const inter = Inter({ subsets: ["latin"] });
+
+// Configure the Montserrat font for use with a CSS variable
+const montserrat = Montserrat({ 
+  subsets: ["latin"],
+  weight: ['400', '500', '600', '700'], // Include a range of weights
+  variable: '--font-montserrat', // This is the key part
+});
 
 export const metadata: Metadata = {
   title: "Plumbros Lofts - London Loft Conversion Specialists",
@@ -18,7 +26,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-white text-gray-800`}>
+      {/* Apply both font variables to the body */}
+      <body className={`${inter.className} ${montserrat.variable}`}>
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">

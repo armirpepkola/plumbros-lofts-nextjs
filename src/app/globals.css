@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #941231;
+  --color-brand-dark: #474344;
+  --color-brand-light: #f8f9fa;
+}
