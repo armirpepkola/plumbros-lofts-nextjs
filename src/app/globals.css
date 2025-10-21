@@ -5,3 +5,25 @@
   --color-brand-dark: #474344;
   --color-brand-light: #f8f9fa;
 }
+
+/* --- MARQUEE ANIMATION (NOW RESPONSIVE) --- */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-container {
+  /* Default speed for mobile (faster) */
+  animation: marquee 30s linear infinite; 
+}
+
+/* On medium screens and up, use the slower speed */
+@media (min-width: 768px) {
+  .marquee-container {
+    animation-duration: 60s;
+  }
+}
+
+.marquee-container:hover {
+  animation-play-state: paused;
+}
