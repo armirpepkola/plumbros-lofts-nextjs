@@ -10,8 +10,8 @@ export default function Home() {
     <main>
       <Hero />
       <AboutSection />
-      <WhyChooseUsSection />
       <PortfolioShowcase />
+      <WhyChooseUsSection />
       <TrustBadges />
       <ContactSection />
     </main>
