@@ -15,6 +15,7 @@ const affiliations = [
     { name: 'MyBuilder', logoUrl: '/homepage/checkatrade-logo.png' },
     { name: 'Checkatrade', logoUrl: '/homepage/fed_masterbuilders-logo.png' },
     { name: 'Federation of Master Builders', logoUrl: '/homepage/mybuilder-logo.webp' },
+    { name: 'Trustmark', logoUrl: '/homepage/trustmark-logo.jpg' },
 ];
 
 const contentVariants: Variants = {
