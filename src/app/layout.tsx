@@ -3,6 +3,7 @@ import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BackToTopButton from "@/components/BackToTopButton";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ 
@@ -31,6 +32,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        <BackToTopButton />
       </body>
     </html>
   );
