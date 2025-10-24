@@ -1,7 +1,14 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import PortfolioGrid from '@/components/PortfolioGrid'; // Import our new client component
+import PortfolioGrid from '@/components/PortfolioGrid'; // Import new client component
+import type { Metadata } from 'next';
+
+// --- SEO METADATA ADDED HERE ---
+export const metadata: Metadata = {
+  title: "Our Work | Portfolio of Completed Projects",
+  description: "View a showcase of our completed loft conversion, house extension, and refurbishment projects across London. See the quality of our craftsmanship.",
+};
 
 // --- DATA FETCHING (Runs only on the server) ---
 const getProjects = () => {

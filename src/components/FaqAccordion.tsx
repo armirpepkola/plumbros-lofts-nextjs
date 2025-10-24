@@ -1,4 +1,4 @@
-"use client"; // This component needs state, so it must be a Client Component
+"use client";
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -40,8 +40,27 @@ const AccordionItem = ({ item, isOpen, onClick }: { item: FaqItemProps, isOpen: 
 export default function FaqAccordion({ items }: { items: FaqItemProps[] }) {
     const [expandedFaq, setExpandedFaq] = useState<number | null>(0);
 
+    // --- NEW: DYNAMIC FAQ SCHEMA GENERATION ---
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": items.map(item => ({
+            "@type": "Question",
+            "name": item.q,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.a
+            }
+        }))
+    };
+
     return (
         <section className="py-20 md:py-28 bg-[#1a1a1a]">
+            {/* --- NEW: FAQ SCHEMA SCRIPT INJECTED HERE --- */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="container mx-auto max-w-4xl px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold font-[var(--font-montserrat)]">

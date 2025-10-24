@@ -3,6 +3,13 @@ import Image from 'next/image';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import type { Metadata } from 'next'; // Import the Metadata type
+
+// --- SEO METADATA ADDED HERE ---
+export const metadata: Metadata = {
+  title: "Blog | Insights & Inspiration for Your Home",
+  description: "Explore our expert guide for loft conversion and house extension ideas, tips, and the latest trends in home transformation in London.",
+};
 
 const getPosts = () => {
     const files = fs.readdirSync(path.join('src', 'posts'));

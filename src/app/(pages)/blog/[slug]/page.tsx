@@ -12,17 +12,14 @@ type PageProps = {
   }>;
 };
 
-// --- DYNAMIC METADATA (CRUCIAL FOR SEO) ---
+// --- DYNAMIC METADATA ---
 export async function generateMetadata({ params }: PageProps) {
-  const { slug } = await params; // ✅ Await params per Next.js 15.5+ spec
-
+  const { slug } = await params;
   const markdownWithMeta = fs.readFileSync(
     path.join("src", "posts", `${slug}.md`),
     "utf-8"
   );
-
   const { data: frontmatter } = matter(markdownWithMeta);
-
   return {
     title: `${frontmatter.title} | Plumbros Lofts Blog`,
     description: frontmatter.excerpt,
@@ -49,11 +46,39 @@ const getPost = (slug: string) => {
 
 // --- MAIN BLOG ARTICLE PAGE ---
 export default async function ArticlePage({ params }: PageProps) {
-  const { slug } = await params; // ✅ Await params here too
+  const { slug } = await params;
   const { frontmatter, content } = getPost(slug);
+
+  // --- NEW: DYNAMIC ARTICLE SCHEMA GENERATION ---
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": frontmatter.title,
+    "image": `https://www.plumbroslofts.co.uk${frontmatter.cover_image}`, // Full URL for the image
+    "datePublished": new Date(frontmatter.date).toISOString(),
+    "dateModified": new Date(frontmatter.date).toISOString(),
+    "author": {
+        "@type": "Organization",
+        "name": "Plum & Bros Lofts"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Plum & Bros Lofts",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.plumbroslofts.co.uk/images/logo.png" // Full URL for your logo
+        }
+    },
+    "description": frontmatter.excerpt
+  };
 
   return (
     <main className="bg-white">
+      {/* --- NEW: ARTICLE SCHEMA SCRIPT INJECTED HERE --- */}
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <article>
         {/* ARTICLE HEADER */}
         <header className="py-16 md:py-24 text-center">

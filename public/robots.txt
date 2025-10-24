@@ -1,0 +1,14 @@
+# =============================================================
+# Instructions for all web crawlers (robots)
+# =============================================================
+
+User-agent: *
+# These rules apply to all bots.
+
+
+# Allow full access to the site. We don't have any private areas to hide.
+Allow: /
+
+
+# Point all compliant bots to our sitemap.
+Sitemap: https://www.plumbroslofts.co.uk/sitemap.xml

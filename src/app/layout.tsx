@@ -14,6 +14,7 @@ const montserrat = Montserrat({
 
 // --- SEO METADATA IMPLEMENTED ---
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.plumbroslofts.co.uk'),
   title: {
     default: "Loft Conversion Specialists London | Plum & Bros Lofts",
     template: "%s | Plum & Bros Lofts",
@@ -25,10 +26,10 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Plum & Bros Lofts",
-  "image": "/images/logo.png", // Using our local logo
-  "url": "https://www.plumbroslofts.co.uk/", // The future live URL
+  "image": "/images/logo.png",
+  "url": "https://www.plumbroslofts.co.uk/",
   "telephone": "+447915635702",
-  "priceRange": "££", // Using a standard placeholder
+  "priceRange": "££",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "159 Willesden Lane",
