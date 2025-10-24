@@ -12,9 +12,13 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
-export const metadata = {
-  title: "Plum & Bros Lofts - London Loft Conversion Specialists",
-  description: "Expert loft conversion and house extension services in London.",
+// --- SEO METADATA IMPLEMENTED ---
+export const metadata: Metadata = {
+  title: {
+    default: "Loft Conversion Specialists London | Plum & Bros Lofts",
+    template: "%s | Plum & Bros Lofts",
+  },
+  description: "Family-run loft conversion specialists in London. We build stunning dormer, mansard & hip-to-gable lofts. 10-year guarantee. Get a free quote!",
 };
 
 export default function RootLayout({

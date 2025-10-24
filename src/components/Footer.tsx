@@ -39,9 +39,9 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-4"><Image src="/logo.png" alt="Plumbros Lofts Logo" width={180} height={45} /></Link>
             <p className="text-gray-400 text-sm mb-6">Creating beautiful, functional living spaces with unmatched craftsmanship and service.</p>
             <div className="flex items-center space-x-4">
-              <a href="#" aria-label="Facebook" className="text-gray-400 hover:text-white transform hover:-translate-y-1 transition-all duration-200"><FaFacebookF size={24} /></a>
-              <a href="#" aria-label="Instagram" className="text-gray-400 hover:text-white transform hover:-translate-y-1 transition-all duration-200"><FaInstagram size={24} /></a>
-              <a href="#" aria-label="TikTok" className="text-gray-400 hover:text-white transform hover:-translate-y-1 transition-all duration-200"><FaTiktok size={24} /></a>
+              <a href="https://www.facebook.com/plum.kastrati/?locale=ms_MY" aria-label="Facebook" className="text-gray-400 hover:text-white transform hover:-translate-y-1 transition-all duration-200" target="_blank"><FaFacebookF size={24} /></a>
+              <a href="https://www.instagram.com/plumbroslofts/" aria-label="Instagram" className="text-gray-400 hover:text-white transform hover:-translate-y-1 transition-all duration-200" target="_blank"><FaInstagram size={24} /></a>
+              <a href="https://www.tiktok.com/@plum.bros.lofts" aria-label="TikTok" className="text-gray-400 hover:text-white transform hover:-translate-y-1 transition-all duration-200" target="_blank"><FaTiktok size={24} /></a>
             </div>
           </div>
 
@@ -65,10 +65,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold font-[var(--font-montserrat)] uppercase mb-4">Get In Touch</h3>
+            <h3 className="text-lg font-semibold font-[var(--font-montserrat)] uppercase mb-4">Let's have a chat</h3>
             <ul className="space-y-4 text-gray-400">
               <li className="flex items-start"><FaMapMarkerAlt className="w-4 h-4 mr-3 mt-1 flex-shrink-0" /><span>London, United Kingdom</span></li>
-              <li className="flex items-center"><FaPhone className="w-4 h-4 mr-3" /><span>(123) 456-7890</span></li>
+              <li className="flex items-center"><FaPhone className="w-4 h-4 mr-3" /><span>+44 7915-635702</span></li>
               <li className="flex items-center"><FaEnvelope className="w-4 h-4 mr-3" /><span>info@plumbroslofts.co.uk</span></li>
             </ul>
           </div>

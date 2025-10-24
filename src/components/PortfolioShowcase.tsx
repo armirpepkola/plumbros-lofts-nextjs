@@ -6,9 +6,9 @@ import Link from 'next/link';
 import { motion, Variants } from 'framer-motion';
 
 const projects = [
-  { id: 1, title: 'Loft Conversion', imageUrl: '/homepage/hero-background.jpg', url: '/loft-conversion' },
-  { id: 2, title: 'House Extension', imageUrl: '/homepage/hero-background.jpg', url: '/house-extension' },
-  { id: 3, title: 'Refurbishment', imageUrl: '/homepage/hero-background.jpg', url: '/refurbishment' },
+  { id: 1, title: 'Loft Conversion', imageUrl: '/homepage/showcase-conversion.jpg', url: '/loft-conversion' },
+  { id: 2, title: 'House Extension', imageUrl: '/homepage/showcase-extension.jpg', url: '/house-extension' },
+  { id: 3, title: 'Refurbishment', imageUrl: '/homepage/showcase-refurb.jpg', url: '/refurbishment' },
 ];
 
 const contentVariants: Variants = {
@@ -24,10 +24,10 @@ export default function PortfolioShowcase() {
       <div className="container mx-auto max-w-7xl px-6">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-[var(--font-montserrat)] text-[var(--color-brand-dark)] mb-4">
-            Explore Our Expertise
+            Conversion. Extension. Refurbishment.
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Hover or tap a project to see the transformative results of our dedication to quality and design.
+            If it adds value and comfort to your home, we do it! Hover or tap a project to see the transformative results of our dedication to quality and design.
           </p>
         </div>
         

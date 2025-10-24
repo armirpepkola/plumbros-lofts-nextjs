@@ -58,9 +58,9 @@ export default function Header() {
                         <Link href="/blog" className="uppercase whitespace-nowrap font-[var(--font-montserrat)] text-[var(--color-brand-dark)] hover:text-[var(--color-brand-primary)] font-semibold transition-colors duration-200 px-4 py-2">Blog</Link>
                         <Link href="/contact" className="uppercase whitespace-nowrap font-[var(--font-montserrat)] text-[var(--color-brand-dark)] hover:text-[var(--color-brand-primary)] font-semibold transition-colors duration-200 px-4 py-2">Contact</Link>
                         <div className="flex items-center space-x-5 pl-5 border-l border-gray-200">
-                            <a href="#" aria-label="Facebook" className="text-[var(--color-brand-dark)] hover:text-[var(--color-brand-primary)] transition-colors duration-200"><FaFacebookF size={28} /></a>
-                            <a href="#" aria-label="Instagram" className="text-[var(--color-brand-dark)] hover:text-[var(--color-brand-primary)] transition-colors duration-200"><FaInstagram size={28} /></a>
-                            <a href="#" aria-label="TikTok" className="text-[var(--color-brand-dark)] hover:text-[var(--color-brand-primary)] transition-colors duration-200"><FaTiktok size={28} /></a>
+                            <a href="https://www.facebook.com/plum.kastrati/?locale=ms_MY" aria-label="Facebook" className="text-[var(--color-brand-dark)] hover:text-[var(--color-brand-primary)] transition-colors duration-200" target="_blank"><FaFacebookF size={28} /></a>
+                            <a href="https://www.instagram.com/plumbroslofts/" aria-label="Instagram" className="text-[var(--color-brand-dark)] hover:text-[var(--color-brand-primary)] transition-colors duration-200" target="_blank"><FaInstagram size={28} /></a>
+                            <a href="https://www.tiktok.com/@plum.bros.lofts" aria-label="TikTok" className="text-[var(--color-brand-dark)] hover:text-[var(--color-brand-primary)] transition-colors duration-200" target="_blank"><FaTiktok size={28} /></a>
                         </div>
                     </div>
 

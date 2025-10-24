@@ -26,7 +26,7 @@ export default function AboutSection() {
     mouseX.set(event.clientX - rect.left);
   }
 
-  const headline = "Transform Your Space with London's Leading Loft Specialists";
+  const headline = "Transform Your Space and Join Our Family";
 
   return (
     <motion.section 
@@ -63,7 +63,7 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
         >
-          With over 20 years of dedicated experience, Plumbros Lofts is a family-run business that prides itself on delivering the highest professional standards. We turn your vision into a reality, creating beautiful, functional spaces that add value and joy to your home.
+          With over 20 years of dedicated experience, Plum Bros Lofts is a family-run business that prides itself on delivering the highest professional standards. We turn your vision into a reality, creating beautiful, functional spaces that add value and joy to your home.
         </motion.p>
         
         <motion.div 
@@ -80,10 +80,10 @@ export default function AboutSection() {
             OUR WORK
           </Link>
           <Link 
-            href="/contact" 
+            href="/blog" 
             className="bg-[var(--color-brand-primary)] hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-md transition-colors duration-300"
           >
-            CONTACT US
+            READ MORE
           </Link>
         </motion.div>
       </div>

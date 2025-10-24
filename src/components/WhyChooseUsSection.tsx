@@ -12,9 +12,9 @@ const tabs = [
 ];
 
 const affiliations = [
-    { name: 'MyBuilder', logoUrl: '/homepage/hero-background.jpg' },
-    { name: 'Checkatrade', logoUrl: '/homepage/hero-background.jpg' },
-    { name: 'Federation of Master Builders', logoUrl: '/homepage/hero-background.jpg' },
+    { name: 'MyBuilder', logoUrl: '/homepage/checkatrade-logo.png' },
+    { name: 'Checkatrade', logoUrl: '/homepage/fed_masterbuilders-logo.png' },
+    { name: 'Federation of Master Builders', logoUrl: '/homepage/mybuilder-logo.webp' },
 ];
 
 const contentVariants: Variants = {
@@ -71,8 +71,8 @@ export default function WhyChooseUsSection() {
                             {activeTab === 'experience' && (
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                                     <div className="p-4"><FaCalendarAlt className="h-8 w-8 mx-auto mb-3 text-[var(--color-brand-primary)]" /><p className="text-4xl font-bold text-[var(--color-brand-dark)] mb-1">20+</p><h3 className="text-lg font-medium text-gray-600">Years Of Experience</h3></div>
-                                    <div className="p-4"><FaRegSmile className="h-8 w-8 mx-auto mb-3 text-[var(--color-brand-primary)]" /><p className="text-4xl font-bold text-[var(--color-brand-dark)] mb-1">500+</p><h3 className="text-lg font-medium text-gray-600">Happy Clients</h3></div>
-                                    <div className="p-4"><FaRegBuilding className="h-8 w-8 mx-auto mb-3 text-[var(--color-brand-primary)]" /><p className="text-4xl font-bold text-[var(--color-brand-dark)] mb-1">750+</p><h3 className="text-lg font-medium text-gray-600">Completed Projects</h3></div>
+                                    <div className="p-4"><FaRegSmile className="h-8 w-8 mx-auto mb-3 text-[var(--color-brand-primary)]" /><p className="text-4xl font-bold text-[var(--color-brand-dark)] mb-1">45+</p><h3 className="text-lg font-medium text-gray-600">Happy Clients</h3></div>
+                                    <div className="p-4"><FaRegBuilding className="h-8 w-8 mx-auto mb-3 text-[var(--color-brand-primary)]" /><p className="text-4xl font-bold text-[var(--color-brand-dark)] mb-1">50+</p><h3 className="text-lg font-medium text-gray-600">Completed Projects</h3></div>
                                 </div>
                             )}
 

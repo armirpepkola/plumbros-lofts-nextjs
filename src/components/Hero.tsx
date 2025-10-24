@@ -63,7 +63,7 @@ export default function Hero() {
                 Design. Build. Transform.
               </motion.h1>
               <motion.p className="text-lg md:text-xl max-w-xl mx-auto lg:mx-0 mb-8 text-gray-300" variants={textItemVariants}>
-                We are a London-based design and build company specializing in bespoke loft conversions and extensions that redefine your home.
+                We are a London-based design and build family specializing in bespoke loft conversions and extensions that redefine your home.
               </motion.p>
               
               <motion.div variants={textItemVariants}>
