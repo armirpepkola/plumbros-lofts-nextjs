@@ -70,16 +70,16 @@ export default function ContactPage() {
                                         <h3 className="font-bold font-[var(--font-montserrat)] mb-1">Email Us</h3>
                                         <p className="text-gray-400 group-hover:text-white transition-colors">info@plumbroslofts.co.uk</p>
                                     </a>
-                                    <a href="tel:+441234567890" className="group relative p-6 bg-white/5 border border-white/10 rounded-lg hover:border-white/20 transition-all duration-300">
+                                    <a href="tel:+447915635702" className="group relative p-6 bg-white/5 border border-white/10 rounded-lg hover:border-white/20 transition-all duration-300">
                                         <FaPhone className="text-3xl text-[var(--color-brand-primary)] mb-4" />
                                         <h3 className="font-bold font-[var(--font-montserrat)] mb-1">Call Us</h3>
-                                        <p className="text-gray-400 group-hover:text-white transition-colors">(123) 456-7890</p>
+                                        <p className="text-gray-400 group-hover:text-white transition-colors">+44 7915-635702</p>
                                     </a>
                                 </motion.div>
                             </div>
 
                             <motion.div className="bg-white/5 border border-white/10 rounded-lg p-8" variants={itemVariants}>
-                                <form action="#" method="POST" className="space-y-8">
+                                <form action="https://formspree.io/f/xgvnggar" method="POST" className="space-y-8" target="_blank">
                                     <div className="relative pt-4">
                                         <input type="text" id="name" name="name" placeholder=" " required className="peer w-full bg-transparent border-b-2 border-white/20 focus:border-[var(--color-brand-primary)] text-white p-2 outline-none transition-colors" />
                                         <label htmlFor="name" className="absolute left-2 -top-3.5 text-sm text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-300 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-[var(--color-brand-primary)]">Name</label>
