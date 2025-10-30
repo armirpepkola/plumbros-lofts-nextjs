@@ -3,6 +3,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
     // --- 1. GET STATIC PAGES ---
     const staticRoutes = [
