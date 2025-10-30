@@ -39,7 +39,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                             &larr; Back to Portfolio
                         </Link>
 
-                        <p className="text-sm font-bold text-[var(--color-brand-primary)] uppercase mb-2">{frontmatter.category}</p>
+                        <p className="text-sm font-bold text-[var(--color-brand-primary)] uppercase mb-2">
+                            {Array.isArray(frontmatter.category)
+                                ? frontmatter.category.join(', ')
+                                : frontmatter.category}
+                        </p>
                         <h1 className="text-4xl md:text-6xl font-extrabold font-[var(--font-montserrat)] text-[var(--color-brand-dark)]">
                             {frontmatter.title}
                         </h1>
@@ -56,7 +60,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                             <h3 className="text-xl font-bold font-[var(--font-montserrat)] mb-4">Project Details</h3>
                             <ul>
                                 <li className="flex justify-between py-2 border-b"><strong>Date:</strong> <span>{new Date(frontmatter.date).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}</span></li>
-                                <li className="flex justify-between py-2 border-b"><strong>Service:</strong> <span>{frontmatter.category}</span></li>
+                                <li className="flex justify-between py-2 border-b">
+                                    <strong>Service:</strong> 
+                                    <span>
+                                        {Array.isArray(frontmatter.category)
+                                                ? frontmatter.category.join(', ')
+                                                : frontmatter.category}
+                                    </span>
+                                </li>
                             </ul>
                         </aside>
                     </div>

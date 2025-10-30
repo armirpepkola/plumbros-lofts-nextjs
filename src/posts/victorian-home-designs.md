@@ -2,7 +2,7 @@
 title: "3 Loft Conversion Designs Perfect for London's Victorian Homes"
 date: '2025-09-24'
 excerpt: "As specialists in London's period properties, we have perfected the designs that work best. Here are three of our most popular and effective designs for Victorian homes."
-cover_image: '/homepage/hero-background.jpg'
+cover_image: '/homepage/showcase-conversion.jpg'
 ---
 
 London's Victorian houses are full of character, but they also come with a unique set of challenges for loft conversions—namely, narrow layouts and steep, pitched roofs. The key to a successful Victorian loft conversion is choosing a design that not only respects the property's character but also cleverly maximizes every inch of space.

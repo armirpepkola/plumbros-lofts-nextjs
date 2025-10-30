@@ -1,0 +1,31 @@
+---
+title: 'Birkbeck Avenue - Family Loft Conversion'
+category: 'Loft Conversion'
+date: '2025-08-10'
+featured_image: '/projects/greenford-birkbeck-ave/imgi_10.jpg'
+images:
+  - '/projects/greenford-birkbeck-ave/imgi_2.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_3.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_4.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_5.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_6.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_7.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_8.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_9.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_10.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_11.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_12.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_13.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_14.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_15.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_16.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_17.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_18.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_19.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_20.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_21.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_22.jpg'
+  - '/projects/greenford-birkbeck-ave/imgi_23.jpg'
+---
+
+On Birkbeck Avenue, we executed a loft conversion that created a spacious and bright new room, perfect for a growing family. The project was designed to be both functional and aesthetically pleasing.

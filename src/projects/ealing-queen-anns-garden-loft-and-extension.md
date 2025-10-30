@@ -1,0 +1,37 @@
+---
+title: 'Ealing - Loft & House Extension'
+category: 
+  - 'Loft Conversion'
+  - 'House Extension'
+date: '2025-09-28'
+featured_image: '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_17.jpg'
+images:
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_2.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_3.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_4.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_5.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_6.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_7.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_8.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_9.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_10.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_11.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_12.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_13.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_14.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_15.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_16.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_17.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_18.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_19.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_20.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_21.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_22.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_23.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_24.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_25.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_26.jpg'
+  - '/projects/ealing-queen-anns-garden-loft-and-extension/imgi_27.jpg'
+---
+
+This comprehensive project in Ealing involved both a loft conversion and a house extension. We built a new storey and extended the ground floor to create a spacious, modern family home with multiple new rooms.

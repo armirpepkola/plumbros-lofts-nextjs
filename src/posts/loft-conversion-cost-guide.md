@@ -2,7 +2,7 @@
 title: 'How Much Does a Loft Conversion Really Cost in London? (2025 Breakdown)'
 date: '2025-09-22'
 excerpt: 'A transparent, no-nonsense breakdown of the real costs involved in a London loft conversion in 2025, so you can budget with confidence.'
-cover_image: '/homepage/hero-background.jpg'
+cover_image: '/conversion/conversion1.jpeg'
 ---
 
 "How much does a loft conversion cost?" It's the first question every London homeowner asks, and the most difficult to answer with a single number. While some companies might give you a vague estimate, the truth is that the final cost depends on a huge range of factors.

@@ -16,6 +16,8 @@ const affiliations = [
     { name: 'Checkatrade', logoUrl: '/homepage/fed_masterbuilders-logo.png' },
     { name: 'Federation of Master Builders', logoUrl: '/homepage/mybuilder-logo.webp' },
     { name: 'Trustmark', logoUrl: '/homepage/trustmark-logo.jpg' },
+    { name: 'Gas Safe', logoUrl: '/homepage/gassafe-logo.png' },
+    { name: 'NicEic', logoUrl: '/homepage/niceic-logo.png' },
 ];
 
 const contentVariants: Variants = {

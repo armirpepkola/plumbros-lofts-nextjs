@@ -77,7 +77,7 @@ export default function Footer() {
       </div>
       <div className="bg-black bg-opacity-20 py-4">
         <div className="container mx-auto max-w-7xl px-6 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} Plumbros Lofts. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Plum & Bros Lofts Ltd. Company Number 12051264. All Rights Reserved.
         </div>
       </div>
     </footer>

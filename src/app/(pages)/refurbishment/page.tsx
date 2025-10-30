@@ -25,7 +25,7 @@ const acts = [
       id: 'reality', 
       title: "Rediscovering Home", 
       content: "The transformation is complete. Every surface, line, and light now works in harmony to reflect your lifestyle and taste. What was once familiar feels entirely new, a space reborn with warmth, character, and purpose, ready to be lived in and loved again.", 
-      image: "/homepage/hero-background.jpg" 
+      image: "/refurbishment/refurb1.jpg" 
     },
 ];
 

@@ -13,7 +13,12 @@ export default function PortfolioGrid({ projects }: { projects: any[] }) {
     
     const filteredProjects = activeCategory === 'All' 
         ? projects 
-        : projects.filter(p => p.frontmatter.category === activeCategory);
+        : projects.filter(p => {
+            const cat = p.frontmatter.category;
+            return Array.isArray(cat)
+                ? cat.includes(activeCategory)
+                : cat === activeCategory;
+        })
 
     return (
         <>
@@ -45,7 +50,11 @@ export default function PortfolioGrid({ projects }: { projects: any[] }) {
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                                     <div className="absolute bottom-0 left-0 p-4 text-white">
                                         <h3 className="text-lg font-bold font-[var(--font-montserrat)]">{project.frontmatter.title}</h3>
-                                        <p className="text-sm opacity-80">{project.frontmatter.category}</p>
+                                        <p className="text-sm opacity-80">
+                                            {Array.isArray(project.frontmatter.category)
+                                                ? project.frontmatter.category.join(', ')
+                                                : project.frontmatter.category}
+                                        </p>
                                     </div>
                                 </div>
                             </Link>
