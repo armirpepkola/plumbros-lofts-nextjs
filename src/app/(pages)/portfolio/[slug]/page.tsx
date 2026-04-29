@@ -35,16 +35,16 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     <div className="container mx-auto max-w-4xl px-6 text-center">
                         
                         {/* --- BREADCRUMB ADDED HERE --- */}
-                        <Link href="/portfolio" className="text-sm font-bold text-gray-500 hover:text-[var(--color-brand-primary)] uppercase transition-colors mb-4 inline-block">
+                        <Link href="/portfolio" className="text-sm font-bold text-gray-500 hover:text-brand-primary uppercase transition-colors mb-4 inline-block">
                             &larr; Back to Portfolio
                         </Link>
 
-                        <p className="text-sm font-bold text-[var(--color-brand-primary)] uppercase mb-2">
+                        <p className="text-sm font-bold text-brand-primary uppercase mb-2">
                             {Array.isArray(frontmatter.category)
                                 ? frontmatter.category.join(', ')
                                 : frontmatter.category}
                         </p>
-                        <h1 className="text-4xl md:text-6xl font-extrabold font-[var(--font-montserrat)] text-[var(--color-brand-dark)]">
+                        <h1 className="text-4xl md:text-6xl font-extrabold text-brand-dark">
                             {frontmatter.title}
                         </h1>
                     </div>
@@ -56,18 +56,27 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                             className="lg:col-span-2 prose lg:prose-xl max-w-none" 
                             dangerouslySetInnerHTML={{ __html: marked(content) }} 
                         />
+                        {/* Inside src/app/(pages)/portfolio/[slug]/page.tsx */}
+
                         <aside className="lg:sticky lg:top-28 h-fit bg-gray-50 p-6 rounded-lg">
-                            <h3 className="text-xl font-bold font-[var(--font-montserrat)] mb-4">Project Details</h3>
+                            <h3 className="text-xl font-bold mb-4">Project Details</h3>
                             <ul>
                                 <li className="flex justify-between py-2 border-b"><strong>Date:</strong> <span>{new Date(frontmatter.date).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}</span></li>
+                                <li className="flex justify-between py-2 border-b"><strong>Service:</strong> <span>{frontmatter.category}</span></li>
+                                
+                                {/* --- NEW STATUS LINE ADDED HERE --- */}
                                 <li className="flex justify-between py-2 border-b">
-                                    <strong>Service:</strong> 
-                                    <span>
-                                        {Array.isArray(frontmatter.category)
-                                                ? frontmatter.category.join(', ')
-                                                : frontmatter.category}
+                                    <strong>Status:</strong> 
+                                    <span className={frontmatter.status === 'live' ? 'text-brand-primary font-bold flex items-center' : 'text-gray-600'}>
+                                        {frontmatter.status === 'live' ? (
+                                            <>
+                                            <span className="w-2 h-2 rounded-full bg-brand-primary animate-pulse mr-2"></span>
+                                            In Progress
+                                            </>
+                                        ) : 'Completed'}
                                     </span>
                                 </li>
+
                             </ul>
                         </aside>
                     </div>

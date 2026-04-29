@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 };
 
 // --- DATA FETCHING (Runs only on the server) ---
+// Inside src/app/(pages)/portfolio/page.tsx
+
 const getProjects = () => {
     const files = fs.readdirSync(path.join(process.cwd(), 'src', 'projects'));
     const projects = files.map(filename => {
@@ -19,10 +21,11 @@ const getProjects = () => {
         return { 
             slug: filename.replace('.md', ''), 
             frontmatter: {
-                // Ensure all frontmatter properties are explicitly included
                 title: frontmatter.title,
                 category: frontmatter.category,
                 date: frontmatter.date,
+                // --- NEW LINE: Extract status, default to 'completed' if empty ---
+                status: frontmatter.status || 'completed', 
                 featured_image: frontmatter.featured_image,
                 images: frontmatter.images,
             }
@@ -40,7 +43,7 @@ export default function PortfolioPage() {
             <section className="py-20 md:py-28">
                 <div className="container mx-auto max-w-7xl px-6">
                     <div className="text-center mb-16">
-                        <h1 className="text-5xl md:text-6xl font-extrabold font-[var(--font-montserrat)] text-[var(--color-brand-dark)] mb-4">Our Work</h1>
+                        <h1 className="text-5xl md:text-6xl font-extrabold text-brand-dark mb-4">Our Work</h1>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">A showcase of our commitment to quality, craftsmanship, and client satisfaction. Explore our completed projects.</p>
                     </div>
 
