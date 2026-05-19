@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
-// @ts-expect-error-next-line: allow side-effect CSS import in Next.js app directory
+
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
