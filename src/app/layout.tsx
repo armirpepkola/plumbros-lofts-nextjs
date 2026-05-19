@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
+// @ts-expect-error-next-line: allow side-effect CSS import in Next.js app directory
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackToTopButton from "@/components/BackToTopButton";
 
-const inter = Inter({ subsets: ["latin"] });
-const montserrat = Montserrat({ 
+// 1. Configure Inter
+const inter = Inter({
   subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-montserrat',
+  display: "swap", // CRITICAL: Fixes FCP delay
+  variable: "--font-inter", // Sets a CSS variable for Tailwind
+});
+
+// 2. Configure Montserrat
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap", // CRITICAL: Fixes FCP delay
+  variable: "--font-montserrat",
 });
 
 // --- SEO METADATA IMPLEMENTED ---
@@ -85,15 +93,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} ${montserrat.variable} bg-white`}>
+    <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
+      <body className="font-sans antialiased bg-white text-gray-900">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
         <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="flex-grow">
+          <main className="grow">
             {children}
           </main>
           <Footer />

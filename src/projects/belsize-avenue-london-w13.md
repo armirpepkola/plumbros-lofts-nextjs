@@ -1,7 +1,7 @@
 ---
 title: "Belsize Avenue - Expert Loft Conversion"
 category: "Loft Conversion"
-date: "2025-11-20"
+date: "2026-05-13"
 status: "live"
 featured_image: "/projects/belsize-avenue-london-w13/belsize1.jpeg"
 images:

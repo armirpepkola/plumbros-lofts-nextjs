@@ -34,7 +34,7 @@ export default function BlogPage() {
             <section className="py-20 md:py-28">
                 <div className="container mx-auto max-w-7xl px-6">
                     <div className="text-center mb-16">
-                        <h1 className="text-5xl md:text-6xl font-extrabold font-[var(--font-montserrat)] text-[var(--color-brand-dark)] mb-4">
+                        <h1 className="text-5xl md:text-6xl font-extrabold text-brand-dark mb-4">
                             Insights & Inspiration
                         </h1>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -44,14 +44,14 @@ export default function BlogPage() {
 
                     {/* --- FEATURED POST --- */}
                     {featuredPost && (
-                        <Link href={`/blog/${featuredPost.slug}`} className="group block mb-16">
+                        <Link href={`/blog/${featuredPost.slug}`} aria-label={`Read the full article: ${featuredPost.frontmatter.title}`} className="group block mb-16">
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                                 <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
                                     <Image src={featuredPost.frontmatter.cover_image} alt={featuredPost.frontmatter.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
                                 <div>
-                                    <p className="text-sm font-bold text-[var(--color-brand-primary)] uppercase mb-2">{new Date(featuredPost.frontmatter.date).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-                                    <h2 className="text-3xl md:text-4xl font-bold font-[var(--font-montserrat)] text-[var(--color-brand-dark)] mb-4 group-hover:text-[var(--color-brand-primary)] transition-colors">
+                                    <p className="text-sm font-bold text-brand-primary uppercase mb-2">{new Date(featuredPost.frontmatter.date).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                                    <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4 group-hover:text-brand-primary transition-colors">
                                         {featuredPost.frontmatter.title}
                                     </h2>
                                     <p className="text-gray-700 text-lg mb-4">{featuredPost.frontmatter.excerpt}</p>
@@ -64,12 +64,12 @@ export default function BlogPage() {
                     {/* --- POSTS GRID --- */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {otherPosts.map(post => (
-                            <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
+                            <Link key={post.slug} href={`/blog/${post.slug}`} aria-label={`Read the full article: ${post.frontmatter.title}`} className="group block">
                                 <div className="relative h-64 rounded-lg overflow-hidden shadow-lg mb-4">
                                     <Image src={post.frontmatter.cover_image} alt={post.frontmatter.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                                 </div>
                                 <p className="text-xs font-bold text-gray-500 uppercase mb-2">{new Date(post.frontmatter.date).toLocaleDateString('en-GB')}</p>
-                                <h3 className="text-xl font-bold font-[var(--font-montserrat)] text-[var(--color-brand-dark)] mb-2 group-hover:text-[var(--color-brand-primary)] transition-colors">
+                                <h3 className="text-xl font-bold text-brand-dark mb-2 group-hover:text-brand-primary transition-colors">
                                     {post.frontmatter.title}
                                 </h3>
                                 {/* --- NEW, TRUNCATED EXCERPT --- */}
