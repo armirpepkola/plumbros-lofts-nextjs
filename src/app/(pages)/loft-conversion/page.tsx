@@ -3,8 +3,11 @@ import ServicePageLayout from '@/components/service-page/ServicePageLayout';
 
 // --- SEO METADATA ---
 export const metadata: Metadata = {
-  title: "Expert Loft Conversions London",
-  description: "From architectural design to the final build, we create breathtaking loft conversions that transform your home. This is our story.",
+  title: 'Loft Conversions North London | Custom Dormer & Mansard Extensions',
+  description: 'Expert loft conversions in North London. Transform your attic into a stunning, high-quality living space. Contact our specialist local builders today.',
+  alternates: {
+    canonical: 'https://plumbroslofts.co.uk/loft-conversion', // production domain
+  }
 };
 
 // --- UNIQUE CONTENT FOR THIS PAGE ---

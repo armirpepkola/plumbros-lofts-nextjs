@@ -3,8 +3,11 @@ import ServicePageLayout from '@/components/service-page/ServicePageLayout';
 
 // --- SEO METADATA ---
 export const metadata: Metadata = {
-  title: "Masterful Home Refurbishments London",
-  description: "Breathe new life into your home with a full refurbishment. We blend timeless character with modern luxury. 10-year guarantee.",
+  title: 'Period Property Refurbishments & Renovations North London',
+  description: 'Specialist full house renovations and period property restorations in North London. High-end architectural refurbishments tailored to your budget.',
+  alternates: {
+    canonical: 'https://plumbroslofts.co.uk/refurbishment',
+  }
 };
 
 // --- UNIQUE CONTENT FOR THIS PAGE ---

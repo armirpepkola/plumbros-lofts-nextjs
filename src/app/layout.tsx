@@ -9,14 +9,14 @@ import BackToTopButton from "@/components/BackToTopButton";
 // 1. Configure Inter
 const inter = Inter({
   subsets: ["latin"],
-  display: "swap", // CRITICAL: Fixes FCP delay
-  variable: "--font-inter", // Sets a CSS variable for Tailwind
+  display: "swap", 
+  variable: "--font-inter",
 });
 
 // 2. Configure Montserrat
 const montserrat = Montserrat({
   subsets: ["latin"],
-  display: "swap", // CRITICAL: Fixes FCP delay
+  display: "swap", 
   variable: "--font-montserrat",
 });
 
@@ -32,18 +32,35 @@ export const metadata: Metadata = {
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Plum & Bros Lofts",
+  "@type": "GeneralContractor",
+  "name": "Plum & Bros Lofts Ltd",
   "image": "/images/logo.png",
   "url": "https://www.plumbroslofts.co.uk/",
   "telephone": "+447915635702",
-  "priceRange": "££",
+  "priceRange": "£££",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "159 Willesden Lane",
     "addressLocality": "London",
+    "addressRegion": "England",
     "postalCode": "NW6 7YA",
     "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.542738899999996,
+    "longitude": -0.20829399999999998
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "08:00", "closes": "13:00" }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 17,
+    "bestRating": 5,
+    "worstRating": 1
   },
   "areaServed": [
     { "@type": "AdministrativeArea", "name": "North London" },

@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 import ServicePageLayout from '@/components/service-page/ServicePageLayout';
 
-// --- SEO METADATA (Works perfectly) ---
+// --- SEO METADATA ---
 export const metadata: Metadata = {
-  title: "Bespoke House Extensions London",
-  description: "Create the space you need with a beautiful house extension. Our family-run team designs and builds seamless extensions across London.",
+  title: 'House Extensions North London | Side Return & Rear Builders',
+  description: 'Expand your family home with premier house extensions in North London. Specialising in wrap-around expansions and modern kitchen extensions. Get a quote.',
+  alternates: {
+    canonical: 'https://plumbroslofts.co.uk/house-extension',
+  }
 };
 
 // ============================================================
