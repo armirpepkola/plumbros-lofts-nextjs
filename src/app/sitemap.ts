@@ -44,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 };
             });
         }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
         console.warn('Blog directory not found or error reading posts.');
     }
@@ -66,6 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 };
             });
         }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
         console.warn('Projects directory not found or error reading projects.');
     }
